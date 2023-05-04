@@ -1,11 +1,18 @@
 import React from "react";
 
-function Header(params) {
-    
+function Header(props) {
+    //console.log("en Header me llega esta prop: ",props);
+
+   
 
 
     return (
-        <h1>Header</h1>
+        <>
+           <div>
+            <h1>{props.nombre}</h1>
+
+           </div>
+        </>
     )
 }
 

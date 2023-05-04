@@ -4,22 +4,29 @@ import Main from '../components/Main'
 import  Footer  from '../components/Footer'
 
 const Home = () => {
+ 
+  const nombre = "alvaro"
 
-  const array = [1,5,9,25,84]
+  const numeros = [ 2 , 8 ,12 , 1 , 18]
 
-  const gatos = [{id:1,nombre:"carlitos",raza:"siames",edad:5},
-                 {id:1,nombre:"garfield",raza:"callejero",edad:3},
-                 {id:1,nombre:"minino",raza:"normal",edad:4},
-                 {id:1,nombre:"Faraon",raza:"persa",edad:2}
-    ]
+  const alumno = {id:1,nombre:"alvaro",apellido:"llovera",edad:32,hobby:"cantar",imagen:"https://img.lagaceta.com.ar/fotos/notas/2023/02/01/dia-perro-salchicha-por-se-celebra-cada-1-febrero-argentina-978606-135326.jpg",description:"soy una persona muy estudiosa y me fascina react "}
 
-  const gato = {id:1,nombre:"carlitos",raza:"siames",edad:5}
+  const perros = [{id:1,nombre:"firulais",edad:5,raza:"salchicha"}]
+
+  const saludar =()=> {
+    return <h3>Welcome to react</h3>
+    
+  }
 
   return (
     <div>
-        <Header/>
-        <Main valor={array}/>
-        <Footer/>
+        <Header nombre={nombre}  titulo="Bienvenidos"/>
+        <Main alumno={alumno}/>
+        <Footer saludar={saludar}/>
+
+
+        <br />
+        
     </div>
   )
 }

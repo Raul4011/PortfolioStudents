@@ -3,14 +3,17 @@ import gato from "../assets/siames.jpeg"
 import "../css/Main.css"
 import { Button, Container } from 'react-bootstrap'
 
+
 const Main = (props) => {
 
-  console.log(props);
+  console.log("props en MAIN ", props.alumno);
 
-  const [a,b,c,d,e]= props.valor;
+  //const {id,nombre,apellido,edad,hobby,imagen,description} = props.alumno
 
   let valor = false;
   return (
+    <>
+    
     <div className='row'>
       <div className="col-6">
         <img src={gato} alt="" className='img' />
@@ -21,15 +24,34 @@ const Main = (props) => {
       <button>sumar</button>
       <Button>restar</Button>
       <br />
-     <div>
-      <h3>aqui muestro A: {a} {b} {c} {d} {e}</h3>
-     </div>
+      <br /><br />
+      
+
+      <br />
+
       <Container>
         <p className='text-danger'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque sint, deleniti quaerat accusamus placeat numquam ullam vel cumque minima repudiandae reiciendis, commodi rem quam, provident consequuntur voluptate. Tempora, officiis!</p>
       </Container>
       <br />
-      <h3>{gato.edad}</h3>
+      <ul>
+        {/* {props.numeros.map((num,index)=><>
+        
+          <li key={index}>{num}</li>
+       
+      </>)} */}
+      </ul>
+
     </div>
+    <div className="card border" >
+        <img className="card-img-top" src={props.alumno.imagen} alt="Card image cap" style={{width:"400px",height:"400px"}}/>
+          <div className="card-body">
+            <h5 className="card-title">nombre: {props.alumno.nombre}{" "}{props.alumno.apellido}</h5>
+            <p className="card-text">edad: {props.alumno.edad}</p>
+            <br />
+            <p className="card-text">hobby: {props.alumno.hobby}</p>
+          </div>
+      </div>
+    </>
   )
 }
 
