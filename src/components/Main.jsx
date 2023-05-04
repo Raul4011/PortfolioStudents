@@ -1,9 +1,7 @@
 import React from 'react'
-import { BASE_URL } from '../constants/constants'
-import video from "../assets/video.mp4"
 import gato from "../assets/siames.jpeg"
 import "../css/Main.css"
-import { Button, Container, Card } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 
 const Main = (props) => {
 
@@ -24,7 +22,7 @@ const Main = (props) => {
       <Button>restar</Button>
       <br />
      <div>
-      <h3>aqui muestro A: {a}</h3>
+      <h3>aqui muestro A: {a} {b} {c} {d} {e}</h3>
      </div>
       <Container>
         <p className='text-danger'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eaque sint, deleniti quaerat accusamus placeat numquam ullam vel cumque minima repudiandae reiciendis, commodi rem quam, provident consequuntur voluptate. Tempora, officiis!</p>
