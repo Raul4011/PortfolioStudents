@@ -18,14 +18,12 @@ const Home = () => {
     
   }
 
+  
   return (
     <div>
         <Header nombre={nombre}  titulo="Bienvenidos"/>
         <Main alumno={alumno}/>
-        <Footer saludar={saludar}/>
-
-
-        <br />
+        <Footer saludar={saludar}/>           
         
     </div>
   )
