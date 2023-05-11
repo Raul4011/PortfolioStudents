@@ -6,7 +6,7 @@ function Footer(props) {
     //console.log(props);
     return (
         <div>
-            {props.saludar()}
+            <h3>Alumno/a Web Developer</h3>
         </div>
 
     )

@@ -9,7 +9,9 @@ function Header(props) {
     return (
         <>
            <div>
-            <h1>{props.nombre}</h1>
+            <h1>Bienvenidos a React</h1>
+            <br />
+            <h3>Portfolio De Alumno/a</h3>
 
            </div>
         </>
